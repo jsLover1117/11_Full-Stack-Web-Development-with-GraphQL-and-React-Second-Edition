@@ -10,7 +10,7 @@
     "client": "webpack serve --devtool inline-source-map --hot --config webpack.client.config.js",
     "server": "nodemon --exec babel-node --plugins require-context-hook --watch src/server src/server/index.js",
     "server:production": "node dist/server/bundle.js",
-    "test": "npm run build && mocha --exit test/ --require babel-hook --require @babel/polyfill --recursive"
+    "test": "npm run build && mocha --exit test/ --require babel-hook --require @babel/polyfill"
   },
   "repository": {
     "type": "git",
